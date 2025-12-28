@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>De la Asepsia a la Evidencia | Santiago Torres</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Corregido: Usamos la versión UMD de unpkg para asegurar que 'lucide' se defina globalmente -->
+    <script src="https://unpkg.com/lucide@latest/dist/umd/lucide.js"></script>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&family=Merriweather:ital,wght@0,300;0,400;0,700;1,300&display=swap');
+        
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #000000;
+            color: #E5E7EB;
+        }
+        
+        h1, h2, h3 {
+            font-family: 'Inter', sans-serif;
+            letter-spacing: -0.02em;
+        }
+
+        .serif-text {
+            font-family: 'Merriweather', serif;
+        }
+
+        .manifesto-highlight {
+            background-color: #1F2937;
+            border-left: 4px solid #F3F4F6;
+        }
+
+        /* Simulación de estilo "Diario de Campo" para los diagramas - Invertido para modo oscuro */
+        .diagram-container {
+            background-image: radial-gradient(#374151 1px, transparent 1px);
+            background-size: 20px 20px;
+            background-color: #111827;
+            border: 1px solid #374151;
+        }
+    </style>
+</head>
+<body class="antialiased">
+
+    <!-- Header / Navegación -->
+    <header class="w-full bg-black border-b border-gray-800 sticky top-0 z-50">
+        <div class="max-w-4xl mx-auto px-6 py-4 flex justify-between items-center text-white">
+            <div class="text-sm font-bold tracking-widest uppercase">Investigación Artística</div>
+            <div class="text-sm text-gray-400">Reto 3: Evidencia material</div>
+        </div>
+    </header>
+
+    <main class="max-w-4xl mx-auto px-6 py-12">
+
+        <!-- TÍTULO PRINCIPAL -->
+        <article class="mb-16">
+            <span class="bg-white text-black text-xs font-bold px-2 py-1 uppercase tracking-wider mb-4 inline-block">Diario de Proceso</span>
+            <h1 class="text-4xl md:text-5xl font-extrabold text-white mb-6 leading-tight">
+                De la Asepsia a la Evidencia: <br>
+                <span class="text-gray-400 font-normal">Cómo restituir lo real sin revictimizar.</span>
+            </h1>
+            
+            <div class="flex items-center gap-4 text-sm text-gray-400 border-t border-b border-gray-800 py-4 mt-8">
+                <div class="flex items-center gap-2">
+                    <i data-lucide="user" class="w-4 h-4"></i>
+                    <span>Santiago Torres Soria</span>
+                </div>
+                <div class="flex items-center gap-2">
+                    <i data-lucide="users" class="w-4 h-4"></i>
+                    <span>Colectivo Common Ground</span>
+                </div>
+                <div class="flex items-center gap-2">
+                    <i data-lucide="calendar" class="w-4 h-4"></i>
+                    <span>Diciembre 2025</span>
+                </div>
+            </div>
+        </article>
+
+        <!-- SECCIÓN 1: EL DETONANTE -->
+        <section class="mb-20">
+            <h2 class="text-2xl font-bold mb-6 flex items-center gap-3 text-white">
+                <span class="bg-gray-800 text-white w-8 h-8 flex items-center justify-center rounded-full text-sm">1</span>
+                El Conflicto Inicial
+            </h2>
+            <div class="prose prose-lg text-gray-300 serif-text leading-relaxed">
+                <p class="mb-4">
+                    Mi proceso en este Reto 3 no comenzó con una certeza, sino con una disputa teórica. Al analizar la obra seminal de Martha Rosler, <em>The Bowery in two inadequate descriptive systems</em>, me surgió una pregunta incómoda que desestabilizó mi comprensión de la ética documental.
+                </p>
+                <p>
+                    ¿Es ético borrar al sujeto para "protegerlo"? ¿O es esa eliminación sistemática una forma de <strong class="text-black bg-yellow-500 px-1">higiene visual</strong> que protege más nuestra comodidad burguesa que la dignidad de la víctima?
+                </p>
+                <blockquote class="border-l-4 border-white pl-6 italic my-8 text-gray-200 text-xl">
+                    "Al principio, mi impulso fue pedir el retorno del cuerpo: la mirada horizontal. Pero al cruzarme con las lecturas de Forensic Architecture y Hito Steyerl, mi enfoque maduró. Entendí que la alternativa al sensacionalismo no es el vacío, sino la prueba."
+                </blockquote>
+            </div>
+        </section>
+
+        <!-- SECCIÓN 2: DIAGRAMA DEL PÉNDULO -->
+        <section class="mb-20">
+            <h2 class="text-2xl font-bold mb-6 flex items-center gap-3 text-white">
+                <span class="bg-gray-800 text-white w-8 h-8 flex items-center justify-center rounded-full text-sm">2</span>
+                Visualizando la Tensión
+            </h2>
+            
+            <!-- CONTENEDOR DEL DIAGRAMA (Representación en HTML/CSS) -->
+            <div class="diagram-container p-8 rounded-lg mb-4 relative overflow-hidden">
+                <div class="absolute top-2 right-2 text-xs text-gray-500 font-mono">FIG. 1: EL PÉNDULO DE LA REPRESENTACIÓN</div>
+                
+                <div class="flex flex-col md:flex-row justify-between items-center gap-8 py-10 relative">
+                    <!-- Línea conectora -->
+                    <div class="hidden md:block absolute top-1/2 left-10 right-10 h-0.5 bg-gray-700 -z-0"></div>
+
+                    <!-- Extremo Izquierda -->
+                    <div class="bg-gray-900 border border-gray-700 p-4 rounded shadow-sm w-full md:w-1/3 text-center relative z-10 opacity-80">
+                        <div class="text-red-400 font-bold mb-1 line-through decoration-2">HIGIENE VISUAL</div>
+                        <div class="text-xs text-gray-400">Ocultación / Rosler</div>
+                        <div class="text-xs text-gray-400">Miedo a ofender</div>
+                        <div class="mt-2 text-xs font-mono bg-gray-800 text-gray-300 p-1">"No mostrar nada"</div>
+                    </div>
+
+                    <!-- Centro (Tu Propuesta) -->
+                    <div class="bg-white text-black p-6 rounded-lg shadow-xl w-full md:w-1/3 text-center relative z-20 transform scale-110 border-4 border-gray-500">
+                        <div class="text-yellow-600 font-bold mb-2 tracking-widest text-sm">PUNTO DE EQUILIBRIO</div>
+                        <div class="font-bold text-lg mb-1">RESTITUCIÓN FORENSE</div>
+                        <div class="text-xs text-gray-600 border-t border-gray-300 pt-2 mt-2">
+                            Evidencia / Residuo<br>Huella / Error
+                        </div>
+                        <i data-lucide="scale" class="w-6 h-6 mx-auto mt-3 text-yellow-600"></i>
+                    </div>
+
+                    <!-- Extremo Derecha -->
+                    <div class="bg-gray-900 border border-gray-700 p-4 rounded shadow-sm w-full md:w-1/3 text-center relative z-10 opacity-80">
+                        <div class="text-red-400 font-bold mb-1 line-through decoration-2">PORNOGRAFÍA</div>
+                        <div class="text-xs text-gray-400">Shock / Revictimización</div>
+                        <div class="text-xs text-gray-400">Consumo emocional</div>
+                        <div class="mt-2 text-xs font-mono bg-gray-800 text-gray-300 p-1">"Mostrarlo todo"</div>
+                    </div>
+                </div>
+            </div>
+            <p class="text-sm text-gray-500 italic text-center">
+                Nota de proceso: Mi búsqueda consistió en encontrar el anclaje central entre esconder la realidad (asepsia) y consumirla (espectáculo).
+            </p>
+        </section>
+
+        <!-- SECCIÓN 3: LAS TENSIONES EPISTEMOLÓGICAS -->
+        <section class="mb-20">
+            <h2 class="text-2xl font-bold mb-6 flex items-center gap-3 text-white">
+                <span class="bg-gray-800 text-white w-8 h-8 flex items-center justify-center rounded-full text-sm">3</span>
+                Las Tensiones del Proceso
+            </h2>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+                <!-- Tensión 1 -->
+                <div class="bg-gray-900 border border-gray-800 p-6 rounded-lg hover:border-gray-600 transition-colors">
+                    <div class="flex items-center justify-between mb-4">
+                        <span class="font-bold text-sm text-gray-500">TENSIÓN 01</span>
+                        <i data-lucide="heart-handshake" class="w-5 h-5 text-gray-500"></i>
+                    </div>
+                    <h3 class="font-bold text-lg mb-2 text-white">Empatía vs. Responsabilidad</h3>
+                    <p class="text-sm text-gray-400 leading-relaxed">
+                        ¿De qué sirve llorar por el otro si no podemos certificar la injusticia? Pasé de buscar la emoción a buscar la prueba jurídica.
+                    </p>
+                </div>
+
+                <!-- Tensión 2 -->
+                <div class="bg-gray-900 border border-gray-800 p-6 rounded-lg hover:border-gray-600 transition-colors">
+                    <div class="flex items-center justify-between mb-4">
+                        <span class="font-bold text-sm text-gray-500">TENSIÓN 02</span>
+                        <i data-lucide="image-off" class="w-5 h-5 text-gray-500"></i>
+                    </div>
+                    <h3 class="font-bold text-lg mb-2 text-white">Imagen Pulcra vs. Imagen Pobre</h3>
+                    <p class="text-sm text-gray-400 leading-relaxed">
+                        Entender con Hito Steyerl que el error técnico (píxel, desenfoque) contiene más verdad política que la alta definición comercial.
+                    </p>
+                </div>
+
+                <!-- Tensión 3 -->
+                <div class="bg-gray-900 border border-gray-800 p-6 rounded-lg hover:border-gray-600 transition-colors">
+                    <div class="flex items-center justify-between mb-4">
+                        <span class="font-bold text-sm text-gray-500">TENSIÓN 03</span>
+                        <i data-lucide="brain-circuit" class="w-5 h-5 text-gray-500"></i>
+                    </div>
+                    <h3 class="font-bold text-lg mb-2 text-white">Imaginación vs. Restitución</h3>
+                    <p class="text-sm text-gray-400 leading-relaxed">
+                        Abandonar la idea de que el espectador debe "imaginar" el dolor (su imaginación es limitada) y exigir que la obra "restituya" los hechos.
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <!-- SECCIÓN 4: EL REFERENTE (ESTÉTICA FORENSE) -->
+        <section class="mb-20 bg-gray-900 border border-gray-800 text-white p-8 rounded-xl -mx-4 md:mx-0">
+            <div class="flex flex-col md:flex-row gap-8 items-center">
+                <div class="w-full md:w-1/2">
+                    <div class="aspect-video bg-black rounded flex items-center justify-center border border-gray-700 relative overflow-hidden group">
+                        <!-- Imagen de Eyal Weizman: Proyecto de Arquitectura Forense -->
+                        <img src="https://mir-s3-cdn-cf.behance.net/project_modules/max_1200/c7f6b957960321.59e9c9c1b3f6d.jpg" alt="Proyecto de Arquitectura Forense de Eyal Weizman - Análisis de Nube de Bombas 3D" class="absolute inset-0 w-full h-full object-cover opacity-80 group-hover:opacity-100 transition-opacity duration-300">
+                        <div class="absolute inset-0 bg-gradient-to-t from-black to-transparent opacity-60"></div>
+                        <div class="z-10 text-center px-4 relative">
+                             <i data-lucide="search" class="w-10 h-10 mx-auto mb-2 text-white opacity-80"></i>
+                            <span class="text-sm font-mono text-gray-100 bg-black bg-opacity-50 px-2 py-1 rounded">[IMAGEN REFERENCIA: FORENSIC ARCHITECTURE]</span>
+                            <p class="text-xs text-gray-300 mt-2 bg-black bg-opacity-50 inline-block px-2 py-1 rounded">Modelo 3D / Análisis de Nube de Impacto</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="w-full md:w-1/2">
+                    <h2 class="text-2xl font-bold mb-4 text-white">El Giro Forense</h2>
+                    <p class="text-gray-300 serif-text leading-relaxed mb-4">
+                        Lo que más me aclaró el enfoque fue el concepto de <strong>"Estética Forense"</strong> de Eyal Weizman. Entender que un edificio bombardeado, un píxel corrupto o un residuo urbano son testigos que no mienten.
+                    </p>
+                    <p class="text-gray-400 text-sm italic border-l-2 border-yellow-500 pl-4">
+                        "Esto cambió mi forma de redactar el manifiesto: dejé de hablar de 'emociones' y empecé a usar términos como 'certificar', 'anclar' y 'denunciar'."
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <!-- SECCIÓN 5: EL RESULTADO (MANIFIESTO) -->
+        <section class="mb-20">
+            <h2 class="text-2xl font-bold mb-6 flex items-center gap-3 text-white">
+                <span class="bg-gray-800 text-white w-8 h-8 flex items-center justify-center rounded-full text-sm">4</span>
+                La Contribución a Common Ground
+            </h2>
+            
+            <div class="flex flex-col md:flex-row gap-8">
+                <!-- Tarjeta del Manifiesto -->
+                <div class="w-full md:w-2/5 bg-black shadow-lg border border-gray-700 p-1 relative rotate-1 hover:rotate-0 transition-transform duration-300">
+                    <div class="bg-gray-900 p-6 h-full flex flex-col justify-between border border-dashed border-gray-700">
+                        <div>
+                            <div class="text-xs font-bold text-gray-400 uppercase tracking-widest mb-10">MANIFESTO / DRAFT FINAL</div>
+                            <h3 class="text-3xl font-black text-white leading-none mb-2">RESTITUTING</h3>
+                            <h3 class="text-3xl font-black text-white leading-none mb-6">THE REAL</h3>
+                            
+                            <div class="space-y-4 font-mono text-xs">
+                                <div class="text-gray-500">1. Shared Fragility (Belén)</div>
+                                <div class="text-gray-500">2. Common Voice (Jorge)</div>
+                                <div class="text-black font-bold bg-yellow-500 p-1 -ml-1">3. MATERIAL EVIDENCE (Santiago)</div>
+                            </div>
+                        </div>
+                        <div class="mt-8 text-right text-xs text-gray-600 font-mono">CODE: CG-2025</div>
+                    </div>
+                </div>
+
+                <!-- Explicación del Rol -->
+                <div class="w-full md:w-3/5 prose prose-lg text-gray-300 serif-text">
+                    <p>
+                        En <strong>Common Ground</strong>, mi responsabilidad fue actuar como el contrapeso metodológico. Si mis compañeros aportaban el afecto y la política de la escucha, mi rol era aportar el suelo firme: la evidencia material.
+                    </p>
+                    <div class="manifesto-highlight p-6 rounded my-4">
+                        <h4 class="font-bold text-white not-italic mb-2 text-sm uppercase">Mi Aportación (Extracto del Punto 3)</h4>
+                        <p class="italic mb-0 text-gray-300">
+                            "Si el afecto nos une y la voz compartida nos organiza, la materia es lo que nos ancla a la verdad... La colectividad nos da la fuerza para mirar, pero es la evidencia material la que nos da la legitimidad para denunciar."
+                        </p>
+                    </div>
+                    <p class="font-bold text-white mt-4">
+                        Mi conclusión final para el grupo: No imaginamos lo real; lo restituimos.
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <!-- FOOTER -->
+        <footer class="border-t border-gray-800 pt-12 pb-6 mt-12">
+            <div class="flex flex-col md:flex-row justify-between items-center text-sm text-gray-500">
+                <div class="mb-4 md:mb-0">
+                    &copy; 2025 Santiago Torres Soria. Investigación Artística.
+                </div>
+                <div class="flex gap-4">
+                    <a href="#" class="hover:text-white transition-colors">Portafolio</a>
+                    <a href="#" class="hover:text-white transition-colors">Common Ground</a>
+                    <a href="#" class="hover:text-white transition-colors">Contacto</a>
+                </div>
+            </div>
+        </footer>
+
+    </main>
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+          if (typeof lucide !== 'undefined') {
+            lucide.createIcons();
+          }
+        });
+    </script>
+</body>
+</html>
